@@ -1,10 +1,13 @@
 {
   "name": "inventory-webapp",
   "version": "1.0.0",
-  "description": "This tutorial follows after:\r [Part 01: Protyping our web pages](https://github.com/atcs-wang/inventory-webapp-01-static-prototypes)",
+  "description": "This tutorial follows after:\r [Part 01: Protyping our web pages](https://github.com/atcs-wang/inventory-webapp-01-sntatic-prototypes)",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js",
+    "devstart": "nodemon -e app.js",
+    "initdb": "node db/db_init.js"
   },
   "repository": {
     "type": "git",
