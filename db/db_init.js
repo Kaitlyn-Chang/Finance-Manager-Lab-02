@@ -3,7 +3,7 @@ const db = require("./db_connection");
 
 /**** Delete existing table, if any ****/
 
-const drop_stuff_table_sql = "DROP TABLE IF EXISTS payment;"
+const drop_payment_table_sql = "DROP TABLE IF EXISTS payment;"
 
 db.execute(drop_payment_table_sql);
 
