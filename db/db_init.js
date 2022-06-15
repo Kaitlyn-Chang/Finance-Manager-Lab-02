@@ -5,7 +5,7 @@ const db = require("./db_connection");
 
 const drop_stuff_table_sql = "DROP TABLE IF EXISTS payment;"
 
-db.execute(drop_stuff_table_sql);
+db.execute(drop_payment_table_sql);
 
 /**** Create "payment" table (again)  ****/
 
@@ -46,7 +46,7 @@ db.execute(read_payment_table_sql,
         if (error) 
             throw error;
 
-        console.log("Table 'stuff' initialized with:")
+        console.log("Table 'payment' initialized with:")
         console.log(results);
     }
 );
